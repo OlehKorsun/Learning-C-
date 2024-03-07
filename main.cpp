@@ -33,7 +33,11 @@ auto zad2() -> void{
     std::cout << "Congratulationd"<< std::endl;
 }
 
+
+
+
 // ===========================ZADANIE 3====================================
+
 auto isPrime(auto number = int()) -> bool{
     if(number<2)
         return false;
@@ -64,6 +68,8 @@ void zad3(){
 //=====================================================================================
 
 
+
+
 auto zad4() -> void{
     auto str = std::string();
     std::cout << "Print a word: ";
@@ -87,12 +93,12 @@ auto zad4() -> void{
 
 
 auto main() -> int {
-               //
-              //free function dostepna wszedzie (w calym programie) z definicji publiczne, nie nalezy do zadnej klasy
-             // main jest wyjatkowy, poniewaz mozna nie pisac "return 0;" kompilator sam dostawi, ale tylko w main
-            // w innej funkcji jesli nie napiszemy "return" to sie skompiluje, nie bedzie bledu, ale nie jest to dobrze
-           // cout - object pewnej klasy, strumien standartowy outputowy, funkcja zwraca tez cout (jako lewy argument). wypisuje i zwraca cout
-          //
+                       //
+                      //free function dostepna wszedzie (w calym programie) z definicji publiczne, nie nalezy do zadnej klasy
+                     // main jest wyjatkowy, poniewaz mozna nie pisac "return 0;" kompilator sam dostawi, ale tylko w main
+                    // w innej funkcji jesli nie napiszemy "return" to sie skompiluje, nie bedzie bledu, ale nie jest to dobrze
+                   // cout - object pewnej klasy, strumien standartowy outputowy, funkcja zwraca tez cout (jako lewy argument). wypisuje i zwraca cout
+                  //
     using std::cout; using std::endl;
     cout << "Hello, World!" << endl;                 // endl tez robi czyszczenie bufora
     cout << "Hello," << " World" << "!" << "\n";
@@ -115,9 +121,4 @@ auto main() -> int {
 }
 
 //skompilowac project - build - build project (ctrl + F9)
-
-
-
-
-
 
