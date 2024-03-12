@@ -118,6 +118,36 @@ auto zad5_1() -> void{
 }
 
 
+auto zad5_2() -> void{
+    auto str = std::string();
+    auto boolean = bool(true);
+    while(boolean){
+        std::cout<< "Print a digit by a word: ";
+        std::cin>> str;
+        if(str=="zero"){
+            std::cout<<"0\n";
+            continue;
+        }
+        else if(str=="one"){
+            std::cout<<"1\n";
+            continue;
+        }
+        else if(str=="two"){
+            std::cout<<"2\n";
+            continue;
+        }
+        else if(str=="seven"){
+            std::cout<<"7\n";
+            continue;
+        }
+        else{
+            std::cout<<"Incorrect input! Try again by restarting the program.";
+            boolean = false;
+        }
+    }
+}
+
+
 auto main() -> int {
                        //
                       //free function dostepna wszedzie (w calym programie) z definicji publiczne, nie nalezy do zadnej klasy
