@@ -202,15 +202,15 @@ auto zad8(std::vector<int> vec, int val)->bool{
 
 
 auto main() -> int {
-                       //
-                      //free function dostepna wszedzie (w calym programie) z definicji publiczne, nie nalezy do zadnej klasy
-                     // main jest wyjatkowy, poniewaz mozna nie pisac "return 0;" kompilator sam dostawi, ale tylko w main
-                    // w innej funkcji jesli nie napiszemy "return" to sie skompiluje, nie bedzie bledu, ale nie jest to dobrze
-                   // cout - object pewnej klasy, strumien standartowy outputowy, funkcja zwraca tez cout (jako lewy argument). wypisuje i zwraca cout
-                  //
+               //
+              //free function dostepna wszedzie (w calym programie) z definicji publiczne, nie nalezy do zadnej klasy
+             // main jest wyjatkowy, poniewaz mozna nie pisac "return 0;" kompilator sam dostawi, ale tylko w main
+            // w innej funkcji jesli nie napiszemy "return" to sie skompiluje, nie bedzie bledu, ale nie jest to dobrze
+           // cout - object pewnej klasy, strumien standartowy outputowy, funkcja zwraca tez cout (jako lewy argument). wypisuje i zwraca cout
+          //
     using std::cout; using std::endl;
-    cout << "Hello, World!" << endl;                 // endl tez robi czyszczenie bufora
-    cout << "Hello," << " World" << "!" << "\n";
+    //cout << "Hello, World!" << endl;                 // endl tez robi czyszczenie bufora
+   // cout << "Hello," << " World" << "!" << "\n";
 
     auto k = int();
     auto x = double();
@@ -226,7 +226,13 @@ auto main() -> int {
                                    // s1 == s2 - porownywanie objektow, nie trzeba korzystac z metody equals()!
     //zad1();
     //zad2();
-    zad4();
+   //zad4();
+   //zad5_1();
+   //zad5_2();
+   //zad6();
+   //zad7();
+   auto vec = std::vector<int>{2, 4, 5, 8, 9, 11, 13, 15};
+   std::cout << zad8(vec, 100);
 }
 
 //skompilowac project - build - build project (ctrl + F9)
