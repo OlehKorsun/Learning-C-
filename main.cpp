@@ -161,6 +161,28 @@ auto zad6()->void{
 
 
 
+
+auto zad7()->void{
+    auto vec1 = std::vector<int>(5);
+    auto vec2 = std::vector<int>(5);
+    std::cout<<"Print 10 digit: ";
+    for(int i = 0; i<vec1.size(); ++i)
+        std::cin>>vec1[i];
+    for(int i = 0; i<vec2.size(); ++i)
+        std::cin>>vec2[i];
+    std::ranges::sort(vec1);
+    std::ranges::sort(vec2);
+    for(int i = 0; i<vec1.size(); ++i){
+        if(vec1[i]!=vec2[i]){
+            std::cout<<"Error!";
+            return;
+        }
+    }
+    std::cout<<"Its ok $)";
+}
+
+
+
 auto main() -> int {
                        //
                       //free function dostepna wszedzie (w calym programie) z definicji publiczne, nie nalezy do zadnej klasy
