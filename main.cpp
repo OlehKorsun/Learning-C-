@@ -183,6 +183,24 @@ auto zad7()->void{
 
 
 
+
+auto zad8(std::vector<int> vec, int val)->bool{
+    std::ranges::sort(vec);
+    for(int i = 0, j = vec.size()-1; i<j; ){
+        if(vec[i]+vec[j]<val)
+            i++;
+        else if(vec[i]+vec[j]>val)
+            j--;
+        else {
+            std::cout<< i << " " << j << "\n";
+            return true;
+        }
+    }
+    return false;
+}
+
+
+
 auto main() -> int {
                        //
                       //free function dostepna wszedzie (w calym programie) z definicji publiczne, nie nalezy do zadnej klasy
