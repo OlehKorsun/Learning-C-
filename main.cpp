@@ -148,6 +148,19 @@ auto zad5_2() -> void{
 }
 
 
+
+auto addElement(std::vector<int> vector) {
+    vector.push_back(10);
+}
+auto zad6()->void{
+    auto ints = std::vector<int>();
+    std::cout << ints.size() << '\n';
+    addElement(ints);
+    std::cout << ints.size() << '\n';
+}
+
+
+
 auto main() -> int {
                        //
                       //free function dostepna wszedzie (w calym programie) z definicji publiczne, nie nalezy do zadnej klasy
