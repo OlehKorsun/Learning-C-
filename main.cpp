@@ -90,6 +90,32 @@ auto zad4() -> void{
 }
 
 
+auto zad5_1() -> void{
+    auto digit = int();
+    auto boolean = bool(true);
+    while(boolean){
+        std::cout<<"Print a digit: ";
+        std::cin >> digit;
+        switch (digit) {
+            case 0:
+                std::cout<<"Zero\n";
+                break;
+            case 1:
+                std::cout<<"One\n";
+                break;
+            case 2:
+                std::cout<<"Two\n";
+                break;
+            case 3:
+                std::cout<<"Three\n";
+                break;
+            default:
+                std::cout<<"Incorrect input! Try again by restarting the program.";
+                boolean = false;
+                break;
+        }
+    }
+}
 
 
 auto main() -> int {
